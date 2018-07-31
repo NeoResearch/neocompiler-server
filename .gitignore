@@ -1,0 +1,12 @@
+other
+neocompiler*
+.npm
+.bash_history
+.cache/
+.cloud-locale-test.skip
+.nano/
+.selected_editor
+.ssh/
+.wget-hsts
+DockerNginx/nginx.conf.*
+outputcron*
