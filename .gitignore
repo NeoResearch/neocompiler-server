@@ -10,3 +10,4 @@ neocompiler*
 .wget-hsts
 DockerNginx/nginx.conf.*
 outputcron*
+.gitconfig
