@@ -11,3 +11,5 @@ neocompiler*
 DockerNginx/nginx.conf.*
 outputcron*
 .gitconfig
+.config/
+LIGOU*
