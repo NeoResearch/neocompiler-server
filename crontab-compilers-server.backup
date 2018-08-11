@@ -1,3 +1,4 @@
+
 # Edit this file to introduce tasks to be run by cron.
 # 
 # Each task to run has to be defined through a single line
@@ -22,4 +23,6 @@
 # m h  dom mon dow   command
 
 # check commit and reestart server
-* * * * * /root/neocompiler-server/updateStartCompilersExpress.sh.sh >/root/neocompiler-server/outputcronExpressCompilers.txt 2>&1
+#  */15 * * * * - every 15
+* * * * * (cd /root/neocompiler-server; ./updateStartCompilersExpress.sh) >/root/neocompiler-server/outputcronExpressCompilers.txt 2>&1
+
