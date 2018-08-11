@@ -22,5 +22,5 @@
 # m h  dom mon dow   command
 
 # check commit and reestart server
-01 * * * * /root/updateNeoCompilerAndStartExpress.sh >/root/outputcronCompilers.txt 2>&1
+01 * * * * /root/neocompiler-server/updateStartCompilersExpress.sh.sh >/root/neocompiler-server/outputcronExpressCompilers.txt 2>&1
 
