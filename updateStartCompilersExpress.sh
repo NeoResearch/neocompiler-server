@@ -1,5 +1,5 @@
 #!/bin/bash
-cd neocompiler.io
+cd neocompiler-eco
 COMMIT1=`git log --format="%H" -n 1`
 ./pull.sh
 COMMIT2=`git log --format="%H" -n 1`
