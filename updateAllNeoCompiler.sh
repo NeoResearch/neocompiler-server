@@ -6,7 +6,7 @@ rm /var/log/nginx/access.log
 ./updateMetadata.sh
 
 cd neocompiler.io
-./pull.sh
+#./pull.sh
 #git checkout v1.2
 
 ./npm_prune_install.sh
