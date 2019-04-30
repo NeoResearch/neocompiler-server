@@ -13,5 +13,5 @@ outputcron*
 .gitconfig
 .config/
 LIGOU*
-nohup*
+*nohup*
 metadata
