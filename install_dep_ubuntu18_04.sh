@@ -35,3 +35,5 @@ git clone https://github.com/NeoResearch/neocompiler-eco.git neocompiler.io
 sudo apt-get -y install certbot
 
 ./getCertificates.sh
+
+git clone git@gitlab.com:vncoelho/neocompiler-server-metadata.git metadata
