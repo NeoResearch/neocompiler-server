@@ -21,15 +21,17 @@
 # 
 # m h  dom mon dow   command
 
-#reset privatenet
-7 */12 * * * /root/updateAllNeoCompiler.sh >/root/outputcron1.txt 2>&1
-#48 * * * * /root/updateAllNeoCompiler.sh >/root/outputcron1.txt 2>&1
+# Reestart all Eco Services - reset privatenet - every 12 hours
+#7 */12 * * * /root/updateAllNeoCompiler.sh >/root/outputcron1.txt 2>&1
 
-# reset server
+# Reestart all Eco Services - reset privatenet - every 12 hours
+0 0 7 * * /root/updateAllNeoCompiler.sh >/root/outputcron1.txt 2>&1
+
+#34 * * * * /root/updateAllNeoCompiler.sh >/root/outputcron1.txt 2>&1
+
+# FORCE node interface to reestart
+# 35 * * * * /root/updateInterfaceNeoCompilerStopForce.sh >/root/outputcron2.txt 2>&1
+
+# reset server periodically
 #15 * * * * /root/updateInterfaceNeoCompilerStop.sh >/root/outputcron2.txt 2>&1
-30 * * * * /root/updateInterfaceNeoCompilerStopForce.sh >/root/outputcron2.txt 2>&1
-
-# git pull only
-#*/20 * * * * /root/updateInterfaceNeoCompiler.sh >/root/outputcron3.txt 2>&1
-01 * * * * /root/updateInterfaceNeoCompiler.sh >/root/outputcron3.txt 2>&1
 
