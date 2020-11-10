@@ -4,8 +4,8 @@ rm /var/log/nginx/access.log
 ./updateMetadata.sh
 
 cd neocompiler.io
-(cd docker-compose-eco-network; ./cleanVolumes.sh)
 git pull
+(cd docker-compose-eco-network; ./cleanVolumes.sh)
 
 ./build_everything.sh --no-web
 
