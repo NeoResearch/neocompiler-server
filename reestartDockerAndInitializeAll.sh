@@ -1,4 +1,3 @@
-#!/bin/sh
 source ./.env
 
 echo "\n (RESTART) Reestarting service docker..."
