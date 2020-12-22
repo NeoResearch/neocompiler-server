@@ -37,4 +37,8 @@ sudo apt-get -y install certbot
 
 ./getCertificates.sh
 
+# for master-2x
 git clone git@gitlab.com:vncoelho/neocompiler-server-metadata.git metadata
+
+# for master-2x
+git clone git@gitlab.com:vncoelho/neocompiler-server-metadata-3x.git metadata
