@@ -1,7 +1,10 @@
 source ./.env
 
 touch /root/LIGOUSERVIDOR_ALL.txt
-rm /var/log/nginx/access.log
+
+if (($NEO2)); then
+	rm /var/log/nginx/access.log
+fi
 
 ./updateMetadata.sh
 
