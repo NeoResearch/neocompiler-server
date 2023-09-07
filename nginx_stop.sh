@@ -1,1 +1,1 @@
-(cd DockerNginxHub && docker-compose down -v)
+(cd DockerNginxHub && docker compose down -v)
