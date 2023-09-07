@@ -1,0 +1,1 @@
+(cd DockerNginxHub && docker-compose up -d)

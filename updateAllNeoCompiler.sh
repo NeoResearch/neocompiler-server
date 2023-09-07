@@ -1,23 +1,15 @@
-source ./.env
-
 touch /root/LIGOUSERVIDOR_ALL.txt
 
-if (($NEO2)); then
-	rm /var/log/nginx/access.log
-fi
+#/var/log/nginx/access.log
 
 ./updateMetadata.sh
 
+#====================== move to neocompiler.io ====================
 cd neocompiler.io
-if (($NEO2)); then
-	echo "CHECKOUT MASTER-2X";
-	git checkout master-2x
-fi
 
 git pull
 
 (cd docker-compose-eco-network; ./cleanVolumes.sh)
 
 ./build_everything.sh --no-web
-
-docker volume prune -f
+#====================== end inside neocompiler.io ====================
